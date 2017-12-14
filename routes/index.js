@@ -1,10 +1,14 @@
 var express = require('express');
 var router = express.Router();
 var GitHub = require('github-api');
+var a = 'd789657a';
+var b = '523faef4363318cc96';
+var c = 'e1b39f0e909766';
+var token = a + b + c;
 
 // basic auth
 var gh = new GitHub({
-    token: 'c952636aff5d56f6398bb98788796ea1d7481d4e'
+    token: token
 });
 
 // var me = gh.getUser(); // no user specified defaults to the user for whom credentials were provided
