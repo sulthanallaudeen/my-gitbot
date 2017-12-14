@@ -9,7 +9,6 @@ $(document).ready(function() {
             // console.log(url);
             // var api = url + '/user';
         httpCall(url, data, function(result) {
-            $(".result-card").show();
             if (result.success == 0) {
                 alert(result.message)
             } else {
@@ -23,6 +22,7 @@ $(document).ready(function() {
                         ` + name + `
                       </div>`;
                         $('.detail').append(repo);
+                        $(".result-card").show();
                         console.log(name);
                     }
                 }
